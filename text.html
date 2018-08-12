@@ -1,0 +1,23 @@
+<script>
+function paste()
+{
+var x = document.getElementById("tt").value.split('\n');
+for(var i=0;i<x.length;i++)
+{
+console.log(x[i]);
+}
+document.getElementById("rr").value=lines[i];
+}
+
+</script>
+<style>
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    max-height: 100px;
+}
+</style>
+<input type=text id=rr>
+<textarea id="tt"></textarea>
+<input type="button"  onclick="paste()">

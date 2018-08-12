@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Web</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+</head>
+        <style>
+        .jumbotron {
+  padding: 4rem 2rem;
+  margin-bottom: 0rem;
+  background-color: #e9ecef;
+            border-radius: 0rem;}
+                    .jumbotron2 {
+  padding: 4rem 2rem;
+  margin-bottom: 0rem;
+  background-color: #2c3e50;
+            border-radius: 0rem;}
+        
+        .jumbotron1 {
+            height:200px;
+  margin-bottom: 0rem;
+  background-color: #136fca;
+}
+            #particles-js{
+             height:200px;   
+            }
+            .logo{
+                position:relative;
+                top:50px;
+                left:20px;
+            }
+                        .logo1{
+                            position:relative;
+                            top:-10px;
+                            float:left;
+                            width:100px;
+                            height:200px;
+            }
+            .container {
+    /*other css*/
+    position: relative;
+    z-index: 1;
+}
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+            
+            
+
+        
+    </style>
+<body>
+    
+    <div class="jumbotron1" id="particles-js">
+
+        <div class="logo">
+            <div class="logo1">
+            <img src="turtle1.png" >
+            </div>
+            <span><font color="white"><h1>Turtle</h1>The ultimate drawing tool</font></span></div></div>
+    <script src="particles.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <div class=container>
+        
+        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Documentation</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Reset</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        <div class=jumbotron>
+  <div id=canvascont>
+    <svg height=415px>
+      <path id="lineAB" d="M 150 150" stroke="red" stroke-width="3" fill-opacity="0" transform="translate(0)" stroke-opacity="1" />
+      <path id="turtle" d="M 150 150 l 5 10 l -10 0 l 5 -10" stroke="red" stroke-width="3" fill-opacity="0" transform="translate(0)"/>
+      </svg>
+            </div>
+    <br>
+<textarea id="tarea" class=button placeholder="Enter Commands"></textarea>
+</div>
+
+    </div>
+    <div class=buttoncont>
+    <!-- <button id=forward class=button onclick="move('forward')">Up</button>
+    <button id=backward class=button onclick="move('backward')">Down</button>
+    <button id=right class=button onclick="move('right')">Right</button>
+    <button id=left class=button onclick="move('left')">Left</button>
+    <button id=red class=button onclick="color('red')">Red</button>
+    <button id=green class=button onclick="color('green')">Green</button>
+    <button id=blue class=button onclick="color('blue')">Blue</button>
+    <button id=black class=button onclick="color('black')">Black</button> -->
+  <div>   <button class="btn btn-info btn-lg" id="send">Draw it!</button>
+</div>
+        </div>
+    <div class="jumbotron2"><font color=white><h6>site design / logo © 2018 Turtle Game Inc</h6></font> </div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
